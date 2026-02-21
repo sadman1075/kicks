@@ -162,7 +162,7 @@ export default function Checkout({ data }: any) {
             </div>
 
             {/* Similar Products */}
-            <div>
+            {/* <div>
                 <div className="max-w-7xl mx-auto mt-10 md:mt-20">
                     <div className="flex justify-between  px-5  items-center">
                         <h1 className="text-sm md:text-5xl font-bold">You may also like</h1>
@@ -209,7 +209,7 @@ export default function Checkout({ data }: any) {
                         }
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
