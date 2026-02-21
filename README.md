@@ -1,6 +1,6 @@
 # 👟 KICKS — E-Commerce Web Application
 
-**KICKS** is a modern, responsive **eCommerce web application** built with **Next.js**, **Tailwind CSS**, and **shadcn/ui**.  
+**KICKS** is a modern, responsive **eCommerce web application** built with **Next.js**, **Tailwind CSS**  
 The project focuses on a clean shopping experience with a professional checkout flow inspired by real-world brands.
 
 ---
@@ -27,7 +27,7 @@ The project focuses on a clean shopping experience with a professional checkout 
 
 🚀 Getting Started
 1️⃣ Clone the repository
-git clone https://github.com/your-username/kicks.git
+git clone https://github.com/sadman1075/kicks.git
 cd kicks
 2️⃣ Install dependencies
 npm install
