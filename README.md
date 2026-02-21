@@ -46,24 +46,7 @@ Device	Layout
 Mobile	Product stacks vertically
 Tablet	Flexible grid layout
 Desktop	Cart & order summary side-by-side
-🖼️ Screenshots
 
-(Add screenshots here for better presentation)
-
-![KICKS Checkout Page](./public/images/screenshot.png)
-🔮 Planned Features
-
-🛒 Global cart state (Redux / Context API)
-
-💳 Payment gateway integration
-
-👤 Authentication (Login / Signup)
-
-📦 Order history
-
-🌙 Dark mode
-
-🧪 Unit & UI testing
 
 👨‍💻 Author
 
