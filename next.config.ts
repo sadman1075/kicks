@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
 
 
       },
+      // {
+      //   protocol: 'https',
+      //   hostname: 'pravatar.cc',
+
+
+      // },
     
     ],
   },

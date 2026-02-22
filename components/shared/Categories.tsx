@@ -1,19 +1,37 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+"use client";
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react"
+import { useEffect, useState } from "react";
 
-export default async function Categories() {
+export default  function Categories() {
 
-    const res = await fetch('https://api.escuelajs.co/api/v1/categories')
-    const data = await res.json()
-    const categories = data.slice(0, 2)
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    async function fetchCategories() {
+      try {
+        const res = await fetch('https://api.escuelajs.co/api/v1/categories');
+        const data = await res.json();
+
+        // Take only first 2 categories
+        const sliced = data.slice(0, 2);
+
+        setCategories(sliced);
+      } catch (error) {
+        console.error("Failed to fetch categories:", error);
+      }
+    }
+
+    fetchCategories();
+  }, []);
 
 
 
 
     return (
-        <section className="max-w-7xl mx-auto mt-10 md:mt-20">
+        <section data-aos="zoom-in-up" className="max-w-7xl mx-auto mt-10 md:mt-20">
             <div className=" px-5 rounded-2xl bg-gradient-to-r from-zinc-900  to-zinc-800 text-white py-16 ">
                 <div className="max-w-6xl mx-auto">
 

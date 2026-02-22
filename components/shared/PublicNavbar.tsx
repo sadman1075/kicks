@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "@/components/ui/sheet";
 
@@ -5,9 +7,19 @@ import { ChevronDown, icons, Menu, Search, UserRound } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "../../app/assets/images/logo.png";
 import Image from "next/image";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
-const PublicNavbar = async () => {
+const PublicNavbar =  () => {
+
+      useEffect(() => {
+                Aos.init({
+                    duration: 1000, // animation duration in ms
+                    once: true,     // whether animation should happen only once
+                });
+            }, []);
 
     const navItems = [
     
@@ -18,7 +30,7 @@ const PublicNavbar = async () => {
     ];
 
     return (
-        <header className="flex justify-between max-w-7xl  p-4 rounded-2xl mx-auto md:justify-between items-center bg-white">
+        <header data-aos="fade-down" className="flex justify-between max-w-7xl  p-4 rounded-2xl mx-auto md:justify-between items-center bg-white">
 
             <div>
                 <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
