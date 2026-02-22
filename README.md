@@ -1,8 +1,8 @@
 # 👟 KICKS — E-Commerce Web Application
 
 **KICKS** is a modern, responsive **eCommerce web application** built with **Next.js**, **Tailwind CSS**  
-The project focuses on a clean shopping experience with a professional checkout flow inspired by real-world brands.
-
+The project focuses on a clean shopping experience with a professional checkout flow inspired by real-world brands. 
+## Live Link :https://kicks-theta.vercel.app/
 ---
 
 ## ✨ Features
