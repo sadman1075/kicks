@@ -49,7 +49,7 @@ export default function ProductCart({ data }: any) {
     const sizes = [38, 39, 40, 41, 42, 43, 44, 45, 46, 47];
 
     return (
-        <div className="max-w-7xl mx-auto px-6 py-10">
+        <section className="max-w-7xl mx-auto px-6 py-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
                 {/* LEFT SIDE - IMAGE GALLERY */}
@@ -177,7 +177,7 @@ export default function ProductCart({ data }: any) {
             <div>
                 <div className="max-w-7xl mx-auto mt-10 md:mt-20">
                     <div className="flex justify-between  px-5  items-center">
-                        <h1 className="text-sm md:text-5xl font-bold">You may also like</h1>
+                        <h1 className="text-lg md:text-5xl font-bold">You may also like</h1>
 
                         {!showAll ? (
                             <Button onClick={handleShowMore} className="md:h-10 bg-blue-600 hover:bg-blue-600 ">SHOW MORE</Button>
@@ -189,7 +189,7 @@ export default function ProductCart({ data }: any) {
                     </div>
 
 
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-0 lg:p-4'>
 
                         {
                             products.map((product: any) => (
@@ -222,6 +222,6 @@ export default function ProductCart({ data }: any) {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

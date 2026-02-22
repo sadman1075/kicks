@@ -5,7 +5,7 @@ import sbanner2 from "../../app/assets/images/sbanner2.png"
 
 export default function Banner() {
   return (
-    <main className="max-w-7xl mx-auto p-4">
+    <section className="max-w-7xl mx-auto p-4">
 
       {/* Heading */}
       <h1 className="text-5xl  md:text-[197px] font-extrabold text-center mb-6">
@@ -16,7 +16,6 @@ export default function Banner() {
       {/* Hero Section */}
       <section className="relative rounded-3xl overflow-hidden  h-[400px] md:h-[700px]">
 
-        {/* Background Image */}
         <Image
           src={banner}
           alt="Banner"
@@ -45,13 +44,6 @@ export default function Banner() {
 
           {/* Right Images */}
           <div className="absolute right-6 top-3/4 -translate-y-1/2 flex flex-col gap-4">
-            {/* <Image
-              src={sbanner1}
-              alt="Shoe"
-              width={280}
-              height={280}
-              className="drop-shadow-xl"
-            /> */}
 
             <div className="flex flex-col gap-4">
               <Image
@@ -73,6 +65,6 @@ export default function Banner() {
 
         </div>
       </section>
-    </main>
+    </section>
   );
 }

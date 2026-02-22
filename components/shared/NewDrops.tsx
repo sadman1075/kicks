@@ -17,11 +17,10 @@ export async function NewDropsCard() {
         .filter((product: any) => product?.category?.id === 4)
         .slice(0, 4);
 
-    console.log("products", products);
 
     return (
 
-        <div className="max-w-7xl mx-auto mt-10 md:mt-20">
+        <section className="max-w-7xl mx-auto mt-10 md:mt-20">
             <div className="flex justify-between  px-5  items-center">
                 <h1 className="text-xl md:text-5xl font-bold">DONT MISS OUT <br /> NEW DROPS</h1>
                 <Link href="/products">
@@ -59,7 +58,7 @@ export async function NewDropsCard() {
                     ))
                 }
             </div>
-        </div>
+        </section>
 
     )
 }

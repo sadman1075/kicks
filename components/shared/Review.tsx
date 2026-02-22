@@ -16,11 +16,10 @@ export async function Reviews() {
         .filter((product: any) => product.category?.id === 4)
         .slice(0, 3);
 
-    console.log(products);
 
     return (
 
-        <div className="max-w-7xl  mx-auto mt-10 md:mt-20">
+        <section className="max-w-7xl  mx-auto mt-10 md:mt-20">
             <div className="flex justify-between px-5 items-center">
                 <h1 className="text-3xl md:text-5xl font-bold">REVIEWS</h1>
                 <Link href="#">
@@ -73,7 +72,7 @@ export async function Reviews() {
                     ))
                 }
             </div>
-        </div>
+        </section>
 
     )
 }

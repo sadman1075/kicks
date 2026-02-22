@@ -10,7 +10,7 @@ import Image from "next/image";
 const PublicNavbar = async () => {
 
     const navItems = [
-        // { href: "/", label: "Home" },
+    
         { href: "/products", label: "New Drops 🔥" },
         { href: "#", label: "Men", icons: <ChevronDown className="h-4 font-bold" /> },
         { href: "#", label: "Women", icons: <ChevronDown className="h-4 font-bold" /> },
@@ -92,44 +92,7 @@ const PublicNavbar = async () => {
 
             </div>
 
-            {/* <div className="md:hidden">
-                <Sheet>
-                    <SheetTrigger asChild>
-                        <Button variant="outline">
-                            <Menu></Menu>
-                        </Button>
-                    </SheetTrigger>
-                    <SheetContent>
-
-
-                        <SheetHeader>
-
-
-
-                            {navItems.map((link) => (
-                                <Link
-                                    key={link.label}
-                                    href={link.href}
-                                    className="text-foreground hover:text-primary transition-colors"
-                                >
-                                    {link.label}
-                                </Link>
-                            ))}
-
-
-                            <div>
-                                <Link href={"/login"}>
-                                    <Button className="bg-[#2563eb]">Login</Button>
-                                </Link>
-                            </div>
-
-
-                        </SheetHeader>
-
-
-                    </SheetContent>
-                </Sheet>
-            </div> */}
+  
 
         </header>
     );

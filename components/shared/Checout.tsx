@@ -45,7 +45,7 @@ export default function Checkout({ data }: any) {
 
     const total = data.price + 6.99; 
     return (
-        <div className="max-w-7xl mx-auto p-8">
+        <section className="max-w-7xl mx-auto p-4">
             {/* Banner */}
             <div className="mb-6">
                 <h2 className="text-xl font-semibold">Saving to celebrate</h2>
@@ -210,6 +210,6 @@ export default function Checkout({ data }: any) {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
